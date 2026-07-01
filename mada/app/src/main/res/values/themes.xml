@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.Mada" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">#08080D</item>
+        <item name="android:navigationBarColor">#08080D</item>
+        <item name="android:windowBackground">#08080D</item>
+    </style>
+</resources>
