@@ -3,22 +3,28 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.plugin.compose")
 }
+
 android {
-    namespace  = "com.mada"
+    namespace = "com.mada"
     compileSdk = 34
 
     defaultConfig {
         applicationId = "com.mada"
-        minSdk        = 26
-        targetSdk     = 34
-        versionCode   = 1
-        versionName   = "0.1.0"
+        minSdk = 26
+        targetSdk = 34
+        versionCode = 1
+        versionName = "0.1.0"
     }
 
     buildTypes {
         release {
             isMinifyEnabled = false
         }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     kotlinOptions {
